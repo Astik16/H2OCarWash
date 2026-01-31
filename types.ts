@@ -1,19 +1,26 @@
 import React from 'react';
 
+export enum VehicleType {
+  PASSENGER = 'Легковой транспорт',
+  CARGO = 'Грузовой транспорт',
+  SPECIAL = 'Спецтехника',
+  MUNICIPAL = 'Коммунальный транспорт'
+}
+
+export interface CalculatorState {
+  vehicleType: VehicleType;
+  count: number;
+  fuelControl: boolean;
+  region: string;
+}
+
+export interface NavItem {
+  label: string;
+  href: string;
+}
+
 export interface ServiceItem {
-  name: string;
-  price: string;
-  description?: string;
-}
-
-export interface ServiceCategory {
   title: string;
-  items: ServiceItem[];
-  icon?: React.ReactNode;
-}
-
-export interface Review {
-  author: string;
-  text: string;
-  rating: number;
+  description: string;
+  icon: React.ReactNode;
 }

@@ -1,22 +1,24 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import Features from './components/Features';
-import Gallery from './components/Gallery';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import { Header } from './components/Layout/Header';
+import { Hero } from './components/Hero';
+import { Services } from './components/Services';
+import { Calculator } from './components/Calculator';
+import { LeadMagnet } from './components/LeadMagnet';
+import { WhyUs } from './components/WhyUs';
+import { ContactForm } from './components/ContactForm';
+import { Footer } from './components/Layout/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className="bg-dark-bg min-h-screen text-gray-200 selection:bg-brand-500 selection:text-white">
-      <Navbar />
+    <div className="bg-brand-dark min-h-screen font-sans text-slate-200 selection:bg-brand-accent selection:text-brand-dark">
+      <Header />
       <main>
         <Hero />
         <Services />
-        <Features />
-        <Gallery />
-        <Contact />
+        <Calculator />
+        <LeadMagnet />
+        <WhyUs />
+        <ContactForm />
       </main>
       <Footer />
     </div>
