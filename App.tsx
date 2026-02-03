@@ -10,7 +10,7 @@ import { Footer } from './components/Layout/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className="bg-brand-dark min-h-screen font-sans text-slate-200 selection:bg-brand-accent selection:text-brand-dark">
+    <div className="min-h-screen bg-white font-sans text-slate-700">
       <Header />
       <main>
         <Hero />
